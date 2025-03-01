@@ -58,13 +58,13 @@ export default function Home() {
               className="btn btn-color-2"
               onClick={() => window.open('/PatrickLay_Resume.pdf', '_blank')}
             >
-              Download CV
+              Download Resume
             </button>
             <button
               className="btn btn-color-1"
               onClick={() => location.href='#contact'}
             >
-              Contact Info
+              Let's Connect 👋
             </button>
           </div>
           <div className="socials-container">
