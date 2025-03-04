@@ -57,6 +57,38 @@ nav, .nav-links{
   display: flex;
 }
 
+.nav-links li {
+  position: relative;
+  list-style: none;
+}
+
+.nav-links li a {
+  position: relative;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: grey;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: grey; 
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
 nav {
   justify-content: space-around;
   align-items: center;
@@ -455,7 +487,7 @@ span {
 .skill-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem; 
+  gap: 0.5rem;
 }
 
 .skill-name {

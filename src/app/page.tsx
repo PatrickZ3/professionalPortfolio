@@ -44,10 +44,19 @@ export default function Home() {
         <div className="logo">Patrick<span className="dot">.</span>Lay</div>
         <div>
           <ul className="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            {["About", "Skills", "Projects", "Contacts"].map((item) => (
+              <li key={item}>
+                <a href={`#${item.toLowerCase()}`} className="nav-item">
+                  {item}
+                  <motion.div
+                    className="underline"
+                    initial={{ width: 0 }}
+                    animate={{ width: "100%" }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>
@@ -165,7 +174,7 @@ export default function Home() {
         <div className="section__text__p1">Browse My Recent</div>
         <div className="title">Projects</div>
         <div className="skills-details-container">
-                <Project />
+          <Project />
         </div>
       </section>
     </div>
