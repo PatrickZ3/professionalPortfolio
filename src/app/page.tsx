@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import About from "./components/about";
 import SkillDetail from "./components/skillDetail"
-
+import Project from "./components/project"
 
 export default function Home() {
 
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <section className="profile">
+      <section className="profile" id="profile">
         <div className="section__pic-container"></div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
@@ -108,7 +108,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="about">
+      <section className="about" id="about">
         <div className="section__text__p1"> Get To Know More</div>
         <div className="title">About Me</div>
         <About />
@@ -121,7 +121,7 @@ export default function Home() {
           onClick={() => (window.location.href = "#skills")}
         />
       </section>
-      <section className="skills">
+      <section className="skills" id="skills">
         <div className="section__text__p1"> Explore My</div>
         <div className="title">Skills</div>
         <div className="skills-details-container">
@@ -161,7 +161,13 @@ export default function Home() {
           onClick={() => (window.location.href = "#projects")}
         />
       </section>
-
+      <section className="projects" id="projects">
+        <div className="section__text__p1">Browse My Recent</div>
+        <div className="title">Projects</div>
+        <div className="skills-details-container">
+                <Project />
+        </div>
+      </section>
     </div>
   );
 }

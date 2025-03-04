@@ -170,7 +170,7 @@ a:hover {
 }
 
 section {
-  padding-top: 0;
+  padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
