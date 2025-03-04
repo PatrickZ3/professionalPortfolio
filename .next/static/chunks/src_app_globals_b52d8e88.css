@@ -402,6 +402,10 @@
     resize: both;
   }
 
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .rounded {
     border-radius: .25rem;
   }
@@ -665,7 +669,7 @@ a:hover {
 }
 
 section {
-  padding-top: 4vh;
+  padding-top: 0;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -787,6 +791,175 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+
+.about-containers {
+  margin-top: 20vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+.terminal {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+.terminal-header {
+  height: 28px;
+  background-color: #e4e3e5;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 9px;
+}
+
+.red {
+  background-color: #f96256;
+  border: 1px solid #f65549;
+}
+
+.yellow {
+  background-color: #fdbc3d;
+  border: 1px solid #ffb524;
+}
+
+.green {
+  background-color: #33c948;
+  border: 1px solid #2dbb41;
+}
+
+.terminal-window {
+  background-color: #595d7a;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 50px 100px #32325d26, 0 15px 35px #32325d33, 0 5px 15px #0000001f;
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+
+.terminal-window a {
+  color: var(--link-teal, teal);
+}
+
+.statement:first-child {
+  padding-top: 35px;
+}
+
+.statement:last-child {
+  padding-bottom: 60px;
+}
+
+.statement {
+  margin-bottom: 25px;
+  margin-left: 35px;
+  margin-right: 35px;
+  line-height: 24px;
+}
+
+.input-statement {
+  color: #f7f7f7;
+}
+
+.input-statement:before {
+  content: "> ";
+}
+
+.return-statement {
+  color: #e7d184;
+}
+
+span {
+  background: #f7f7f7a6;
+  animation: 1s step-end infinite caret;
+}
+
+@keyframes caret {
+  50% {
+    background-color: #0000;
+  }
+}
+
+.about {
+  position: relative;
+  max-height: 70vh;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: #fff;
+  border-radius: 2rem;
+  border: .1rem solid #353535;
+  border-color: #a3a3a3;
+  text-align: center;
+  padding: 2rem 3rem;
+}
+
+.skills {
+  position: relative;
+  max-height: 70vh;
+}
+
+.skills-sub-title {
+  color: #555;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skills-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: .5rem;
+}
+
+.skillIcon {
+  cursor: default;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.skill-name {
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 @property --tw-rotate-x {

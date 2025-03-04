@@ -1,6 +1,9 @@
 "use client"
 import Image from "next/image";
 import { motion } from "framer-motion";
+import About from "./components/about";
+import SkillDetail from "./components/skillDetail"
+
 
 export default function Home() {
 
@@ -11,6 +14,30 @@ export default function Home() {
     icon?.classList.toggle("open");
   };
 
+  const programmingLanguages = [
+    "Javascript",
+    "Python",
+    "SQL",
+    "Typescript",
+    "HTML",
+    "CSS",
+    "PostgreSQL"
+  ];
+
+  const technologies = [
+    "Next.js",
+    "Node.js",
+    "React.js",
+    "Tailwind",
+  ];
+
+  const developerTools = [
+    "Git",
+    "Docker",
+    "AWS",
+    "VS Code"
+  ];
+
   return (
     <div>
       <nav className="desktop-nav">
@@ -18,7 +45,7 @@ export default function Home() {
         <div>
           <ul className="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contacts">Contacts</a></li>
           </ul>
@@ -34,14 +61,14 @@ export default function Home() {
           </div>
           <div className="menu-links">
             <li><a href="#about" onClick={toggleMenu}>About</a></li>
-            <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
+            <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
             <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
             <li><a href="#contacts" onClick={toggleMenu}>Contacts</a></li>
           </div>
         </div>
       </nav>
       <section className="profile">
-      <div className="section__pic-container"></div>
+        <div className="section__pic-container"></div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
           <h1 className="title"> Patrick Lay</h1>
@@ -55,27 +82,27 @@ export default function Home() {
             </button>
             <button
               className="btn btn-color-1"
-              onClick={() => location.href='#contact'}
+              onClick={() => location.href = '#contact'}
             >
               Let's Connect 👋
             </button>
           </div>
           <div className="socials-container">
-            <Image 
-            src="/linkedin.png"
-            alt="My LinkedIn Profile"
-            className="icon"
-            onClick={() => window.open('https://www.linkedin.com/in/pslay/', '_blank')}
-            width={32}
-            height={32}
+            <Image
+              src="/linkedin.png"
+              alt="My LinkedIn Profile"
+              className="icon"
+              onClick={() => window.open('https://www.linkedin.com/in/pslay/', '_blank')}
+              width={32}
+              height={32}
             />
-            <Image 
-            src="/github.png"
-            alt="My GitHub Profile"
-            className="icon"
-            onClick={() => window.open('https://www.github.com/PatrickZ3', '_blank')}
-            width={32}
-            height={32}
+            <Image
+              src="/github.png"
+              alt="My GitHub Profile"
+              className="icon"
+              onClick={() => window.open('https://www.github.com/PatrickZ3', '_blank')}
+              width={32}
+              height={32}
             />
           </div>
         </div>
@@ -84,8 +111,57 @@ export default function Home() {
       <section className="about">
         <div className="section__text__p1"> Get To Know More</div>
         <div className="title">About Me</div>
-        
+        <About />
+        <Image
+          src="/arrow.png"
+          alt="arrow"
+          className="icon arrow"
+          width={30}
+          height={30}
+          onClick={() => (window.location.href = "#skills")}
+        />
       </section>
+      <section className="skills">
+        <div className="section__text__p1"> Explore My</div>
+        <div className="title">Skills</div>
+        <div className="skills-details-container">
+          <div className="about-containers">
+            <div className="details-container">
+              <div className="skills-sub-title">Programming Languages</div>
+              <div className="article-container">
+                {programmingLanguages.map((language, index) => (
+                  <SkillDetail key={index} skillName={language} />
+                ))}
+              </div>
+            </div>
+            <div className="details-container">
+              <div className="skills-sub-title">Technologies</div>
+              <div className="article-container">
+                {technologies.map((language, index) => (
+                  <SkillDetail key={index} skillName={language} />
+                ))}
+              </div>
+            </div>
+            <div className="details-container">
+              <div className="skills-sub-title">Developer Tools</div>
+              <div className="article-container">
+                {developerTools.map((language, index) => (
+                  <SkillDetail key={index} skillName={language} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <Image
+          src="/arrow.png"
+          alt="arrow"
+          className="icon arrow"
+          width={30}
+          height={30}
+          onClick={() => (window.location.href = "#projects")}
+        />
+      </section>
+
     </div>
   );
 }
