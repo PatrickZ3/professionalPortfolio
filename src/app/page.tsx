@@ -41,14 +41,7 @@ export default function Home() {
         </div>
       </nav>
       <section className="profile">
-        <div className="section__pic-container">
-          <Image
-            src="/portrait.png"
-            alt="portrait"
-            width={400}
-            height={400}
-          />
-        </div>
+      <div className="section__pic-container"></div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
           <h1 className="title"> Patrick Lay</h1>
@@ -86,6 +79,12 @@ export default function Home() {
             />
           </div>
         </div>
+      </section>
+
+      <section className="about">
+        <div className="section__text__p1"> Get To Know More</div>
+        <div className="title">About Me</div>
+        
       </section>
     </div>
   );
