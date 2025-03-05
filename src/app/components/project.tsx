@@ -14,28 +14,41 @@ interface ProjectType {
 export default function Project() {
     const featuredProject = projectsData.find(item => item.input === "featuredProject")?.return || [];
     return (
-        <div>
+        <div className="about-containers">
             {featuredProject.map((project: ProjectType, index: number) => (
-                <div key={index} className="details-container color-container">
-                    <div>
-                        <Image
-                            src={project.image}
-                            alt={project.name}
-                            className="project-img"
-                            width={1500}
-                            height={1500}
-                        />
-                    </div>
+                <div key={index} className="details-container color-container flex flex-col      items-center">
+                    <Image
+                        src={project.image}
+                        alt={project.name}
+                        className="project-img"
+                        width={400}
+                        height={400}
+                    />
+
                     <div className="skills-sub-title project-title">
                         {project.name}
                     </div>
                     <div>{project.description}</div>
                     <div className="btn-container">
-                        <button className="btn btn-color-2 project-btn" onClick={() => window.open(project.github, '_blank')}>
+                        <button className="btn btn-color-2 project-btn flex items-center gap-1" onClick={() => window.open(project.github, '_blank')}>
+                            <Image
+                                src="/github.png"
+                                alt="GitHub"
+                                className="w-4 h-4 github-icon"
+                                width={20}
+                                height={20}
+                            />
                             Github
                         </button>
-                        <button className="btn btn-color-2 project-btn" onClick={() => window.open(project.liveDemo, '_blank')}>
+                        <button className="btn btn-color-2 project-btn flex items-center gap-1" onClick={() => window.open(project.liveDemo, '_blank')}>
                             Live Demo
+                            <Image
+                                src="/external.png"
+                                alt="external"
+                                className="w-4 h-4 github-icon"
+                                width={20}
+                                height={20}
+                            />
                         </button>
                     </div>
                 </div>

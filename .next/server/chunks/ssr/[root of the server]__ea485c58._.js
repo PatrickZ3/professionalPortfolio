@@ -293,21 +293,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$projec
 function Project() {
     const featuredProject = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$project$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].find((item)=>item.input === "featuredProject")?.return || [];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "about-containers",
         children: featuredProject.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "details-container color-container",
+                className: "details-container color-container flex flex-col      items-center",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            src: project.image,
-                            alt: project.name,
-                            className: "project-img",
-                            width: 1500,
-                            height: 1500
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/components/project.tsx",
-                            lineNumber: 21,
-                            columnNumber: 25
-                        }, this)
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        src: project.image,
+                        alt: project.name,
+                        className: "project-img",
+                        width: 400,
+                        height: 400
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/project.tsx",
                         lineNumber: 20,
@@ -318,41 +313,67 @@ function Project() {
                         children: project.name
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/project.tsx",
-                        lineNumber: 29,
+                        lineNumber: 28,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: project.description
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/project.tsx",
-                        lineNumber: 32,
+                        lineNumber: 31,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "btn-container",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: "btn btn-color-2 project-btn",
+                                className: "btn btn-color-2 project-btn flex items-center gap-1",
                                 onClick: ()=>window.open(project.github, '_blank'),
-                                children: "Github"
-                            }, void 0, false, {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/github.png",
+                                        alt: "GitHub",
+                                        className: "w-4 h-4 github-icon",
+                                        width: 20,
+                                        height: 20
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/project.tsx",
+                                        lineNumber: 34,
+                                        columnNumber: 29
+                                    }, this),
+                                    "Github"
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/app/components/project.tsx",
-                                lineNumber: 34,
+                                lineNumber: 33,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: "btn btn-color-2 project-btn",
+                                className: "btn btn-color-2 project-btn flex items-center gap-1",
                                 onClick: ()=>window.open(project.liveDemo, '_blank'),
-                                children: "Live Demo"
-                            }, void 0, false, {
+                                children: [
+                                    "Live Demo",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/external.png",
+                                        alt: "external",
+                                        className: "w-4 h-4 github-icon",
+                                        width: 20,
+                                        height: 20
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/project.tsx",
+                                        lineNumber: 45,
+                                        columnNumber: 29
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/app/components/project.tsx",
-                                lineNumber: 37,
+                                lineNumber: 43,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/project.tsx",
-                        lineNumber: 33,
+                        lineNumber: 32,
                         columnNumber: 21
                     }, this)
                 ]
@@ -959,6 +980,27 @@ function Home() {
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
                         lineNumber: 176,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        src: "/arrow.png",
+                        alt: "arrow",
+                        className: "icon arrow",
+                        width: 30,
+                        height: 30,
+                        onClick: ()=>window.location.href = "#contacts"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 179,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "btn btn-color-1",
+                        onClick: ()=>location.href = '#contact',
+                        children: "Let's Connect 👋"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/page.tsx",
+                        lineNumber: 187,
                         columnNumber: 9
                     }, this)
                 ]

@@ -176,6 +176,20 @@ export default function Home() {
         <div className="skills-details-container">
           <Project />
         </div>
+        <Image
+          src="/arrow.png"
+          alt="arrow"
+          className="icon arrow"
+          width={30}
+          height={30}
+          onClick={() => (window.location.href = "#contacts")}
+        />
+        <button
+              className="btn btn-color-1"
+              onClick={() => location.href = '#contact'}
+            >
+              Let's Connect 👋
+            </button>
       </section>
     </div>
   );

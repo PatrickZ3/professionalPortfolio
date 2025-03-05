@@ -92,8 +92,8 @@
 
 @layer theme {
   :root, :host {
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-red-100: oklch(.936 .032 17.717);
     --color-red-200: oklch(.885 .062 18.334);
     --color-red-300: oklch(.808 .114 19.571);
@@ -139,6 +139,7 @@
     --color-gray-700: oklch(.373 .034 259.733);
     --color-gray-800: oklch(.278 .033 256.848);
     --color-gray-900: oklch(.21 .034 264.665);
+    --spacing: .25rem;
     --shadow-sm: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
     --shadow-md: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
     --shadow-lg: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
@@ -471,6 +472,22 @@
     display: table;
   }
 
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+
   .flex-shrink {
     flex-shrink: 1;
   }
@@ -491,8 +508,24 @@
     resize: both;
   }
 
+  .flex-col {
+    flex-direction: column;
+  }
+
   .flex-wrap {
     flex-wrap: wrap;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
 
   .rounded {
@@ -556,6 +589,11 @@
 
   .grayscale {
     --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+
+  .invert {
+    --tw-invert: invert(100%);
     filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
   }
 
@@ -1030,7 +1068,7 @@ span {
   border: .1rem solid #353535;
   border-color: #a3a3a3;
   text-align: center;
-  padding: 2rem 3rem;
+  padding: 2rem;
 }
 
 .skills {
@@ -1081,6 +1119,41 @@ span {
 .skill-name {
   font-weight: 400;
   font-size: 1rem;
+}
+
+.projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: #a3a3a3;
+  background: #fafafa;
+}
+
+.project-img {
+  border-radius: 2rem;
+  align-items: center;
+}
+
+.project-title {
+  margin: 1rem;
+  color: #000;
+}
+
+.project-btn {
+  color: #000;
+  border-color: #a3a3a3;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-icon {
+  filter: invert(0);
+  transition: filter .3s ease-in-out;
+}
+
+.project-btn:hover .github-icon {
+  filter: invert();
 }
 
 @property --tw-rotate-x {
