@@ -12,5 +12,10 @@ export default [
       return:
         '"B.Sc. Computer Science - Toronto Metropolitan University, Toronto"',
     },
+    {
+      input: 'Patrick.currentFocus',
+      return:
+        '"???"',
+    },
   ];
   

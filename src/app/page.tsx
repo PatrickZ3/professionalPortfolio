@@ -79,7 +79,6 @@ export default function Home() {
       <section className="profile" id="profile">
         <div className="section__pic-container"></div>
         <div className="section__text">
-          <p className="section__text__p1">Hello, I'm</p>
           <h1 className="title"> Patrick Lay</h1>
           <p className="section__text__p2">Software Engineer</p>
           <div className="btn-container">
@@ -171,11 +170,24 @@ export default function Home() {
         />
       </section>
       <section className="projects" id="projects">
-        <div className="section__text__p1">Browse My Recent</div>
+        <div className="section__text__p1">My Featured</div>
         <div className="title">Projects</div>
         <div className="skills-details-container">
           <Project />
         </div>
+        <button
+            className="btn-learnMore"
+          onClick={() => location.href = '#contact'}
+        >
+          <div className="learnMore">More Projects </div>
+          <Image
+            src="/next.png"
+            alt="next"
+            className="nextArrow"
+            width={15}
+            height={15}
+          />
+        </button>
         <Image
           src="/arrow.png"
           alt="arrow"
@@ -184,13 +196,12 @@ export default function Home() {
           height={30}
           onClick={() => (window.location.href = "#contacts")}
         />
-        <button
-              className="btn btn-color-1"
-              onClick={() => location.href = '#contact'}
-            >
-              Let's Connect 👋
-            </button>
       </section>
+  <section className="contacts" id="contacts">
+    <div className="section__text__p1">Get in Touch</div>
+    <div className="title">Contact Me</div>
+    
+  </section>
     </div>
   );
 }

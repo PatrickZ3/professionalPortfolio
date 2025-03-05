@@ -16,19 +16,19 @@ export default function Project() {
     return (
         <div className="about-containers">
             {featuredProject.map((project: ProjectType, index: number) => (
-                <div key={index} className="details-container color-container flex flex-col      items-center">
+                <div key={index} className="details-container color-container flex flex-col items-center">
                     <Image
                         src={project.image}
                         alt={project.name}
                         className="project-img"
                         width={400}
-                        height={400}
+                        height={300}
                     />
 
                     <div className="skills-sub-title project-title">
                         {project.name}
                     </div>
-                    <div>{project.description}</div>
+                    <div className="project-description">{project.description}</div>
                     <div className="btn-container">
                         <button className="btn btn-color-2 project-btn flex items-center gap-1" onClick={() => window.open(project.github, '_blank')}>
                             <Image
