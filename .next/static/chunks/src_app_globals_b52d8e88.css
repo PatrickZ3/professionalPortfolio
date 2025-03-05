@@ -868,7 +868,7 @@ section {
 }
 
 .terminal-window {
-  background-color: #595d7a;
+  background-color: #555;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 50px 100px #32325d26, 0 15px 35px #32325d33, 0 5px 15px #0000001f;
   font-family: Monaco, Consolas, Lucida Console, monospace;

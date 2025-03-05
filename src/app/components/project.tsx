@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import projectsData from "../data/project"
 
 interface ProjectType {
     name: string;
@@ -10,15 +11,11 @@ interface ProjectType {
     liveDemo: string;
 }
 
-const projectsList: ProjectType[] = [
-    { name: "Project1", image: "/holder.png", description: "test", github: "https://www.google.com", liveDemo: "https://www.google.com" },
-    { name: "Project2", image: "/holder.png", description: "test2", github: "https://www.google.com", liveDemo: "https://www.google.com" },
-    { name: "Project3", image: "/holder.png", description: "test3", github: "https://www.google.com", liveDemo: "https://www.google.com" },
-]
 export default function Project() {
+    const featuredProject = projectsData.find(item => item.input === "featuredProject")?.return || [];
     return (
         <div>
-            {projectsList.map((project: ProjectType, index: number) => (
+            {featuredProject.map((project: ProjectType, index: number) => (
                 <div key={index} className="details-container color-container">
                     <div>
                         <Image

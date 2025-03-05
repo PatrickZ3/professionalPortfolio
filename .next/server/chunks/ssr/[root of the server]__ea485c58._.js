@@ -219,6 +219,62 @@ function SkillDetail({ skillName }) {
     }, this);
 }
 }}),
+"[project]/src/app/data/project.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, d: __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>__TURBOPACK__default__export__)
+});
+const __TURBOPACK__default__export__ = [
+    {
+        input: "featuredProject",
+        return: [
+            {
+                name: "featreProject1",
+                image: "/holder.png",
+                description: "test",
+                github: "https://www.google.com",
+                liveDemo: "https://www.google.com"
+            },
+            {
+                name: "featreProject2",
+                image: "/holder.png",
+                description: "test2",
+                github: "https://www.google.com",
+                liveDemo: "https://www.google.com"
+            },
+            {
+                name: "featreProject3",
+                image: "/holder.png",
+                description: "test3",
+                github: "https://www.google.com",
+                liveDemo: "https://www.google.com"
+            }
+        ]
+    },
+    {
+        input: "projectsList",
+        return: [
+            {
+                name: "Project2",
+                image: "/holder.png",
+                description: "test2",
+                github: "https://www.google.com",
+                liveDemo: "https://www.google.com"
+            },
+            {
+                name: "Project3",
+                image: "/holder.png",
+                description: "test3",
+                github: "https://www.google.com",
+                liveDemo: "https://www.google.com"
+            }
+        ]
+    }
+];
+}}),
 "[project]/src/app/components/project.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -229,36 +285,15 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$project$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/data/project.js [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
-const projectsList = [
-    {
-        name: "Project1",
-        image: "/holder.png",
-        description: "test",
-        github: "https://www.google.com",
-        liveDemo: "https://www.google.com"
-    },
-    {
-        name: "Project2",
-        image: "/holder.png",
-        description: "test2",
-        github: "https://www.google.com",
-        liveDemo: "https://www.google.com"
-    },
-    {
-        name: "Project3",
-        image: "/holder.png",
-        description: "test3",
-        github: "https://www.google.com",
-        liveDemo: "https://www.google.com"
-    }
-];
+;
 function Project() {
-    const featuredProject = projectsData.find((item)=>item.input === "featuredProject")?.return || [];
+    const featuredProject = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$project$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].find((item)=>item.input === "featuredProject")?.return || [];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        children: projectsList.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: featuredProject.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "details-container color-container",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -270,12 +305,12 @@ function Project() {
                             height: 1500
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/project.tsx",
-                            lineNumber: 26,
+                            lineNumber: 21,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/project.tsx",
-                        lineNumber: 25,
+                        lineNumber: 20,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -283,14 +318,14 @@ function Project() {
                         children: project.name
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/project.tsx",
-                        lineNumber: 34,
+                        lineNumber: 29,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: project.description
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/project.tsx",
-                        lineNumber: 37,
+                        lineNumber: 32,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -302,7 +337,7 @@ function Project() {
                                 children: "Github"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/project.tsx",
-                                lineNumber: 39,
+                                lineNumber: 34,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -311,24 +346,24 @@ function Project() {
                                 children: "Live Demo"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/project.tsx",
-                                lineNumber: 42,
+                                lineNumber: 37,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/project.tsx",
-                        lineNumber: 38,
+                        lineNumber: 33,
                         columnNumber: 21
                     }, this)
                 ]
             }, index, true, {
                 fileName: "[project]/src/app/components/project.tsx",
-                lineNumber: 24,
+                lineNumber: 19,
                 columnNumber: 17
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/app/components/project.tsx",
-        lineNumber: 22,
+        lineNumber: 17,
         columnNumber: 9
     }, this);
 }
@@ -943,4 +978,4 @@ function Home() {
 
 };
 
-//# sourceMappingURL=%5Broot%20of%20the%20server%5D__66e4fd6c._.js.map
+//# sourceMappingURL=%5Broot%20of%20the%20server%5D__ea485c58._.js.map

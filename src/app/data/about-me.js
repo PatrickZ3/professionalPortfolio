@@ -5,7 +5,7 @@ export default [
     },
     {
       input: 'Patrick.interests',
-      return: '["photography", "lifting weights", "vlogging", "auto-chess", "travelling"]',
+      return: '["Photography", "Vlogging", "Travelling", "Lifting weights", "Auto-chess"]',
     },
     {
       input: 'Patrick.education',
