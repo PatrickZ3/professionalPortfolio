@@ -6,8 +6,12 @@ import SkillDetail from "./components/skillDetail"
 import Project from "./components/project"
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import { useRouter } from "next/navigation"; 
+
 
 export default function Home() {
+
+  const router = useRouter();
   
   const toggleMenu = () => {
     const menu = document.querySelector(".menu-links");
@@ -180,7 +184,7 @@ export default function Home() {
         </div>
         <button
           className="btn-learnMore !pt-4"
-          onClick={() => location.href = '#contact'}
+          onClick={() => router.push("/allProject")}
         >
           <div className="learnMore ">More Projects </div>
           <Image
