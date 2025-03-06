@@ -5,6 +5,7 @@ import About from "./components/about";
 import SkillDetail from "./components/skillDetail"
 import Project from "./components/project"
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 export default function Home() {
 
@@ -41,7 +42,7 @@ export default function Home() {
 
   return (
     <div>
-      <nav className="desktop-nav">
+      <nav className="desktop-nav" id="home">
         <div className="logo">Patrick<span className="dot">.</span>Lay</div>
         <div>
           <ul className="nav-links">
@@ -62,7 +63,7 @@ export default function Home() {
         </div>
       </nav>
       <nav className="hamburger-nav">
-        <div className="logo">Patrick<span className="dot">.</span>Lay</div>
+        <div className="logo" id="home">Patrick<span className="dot">.</span>Lay</div>
         <div className="hamburger-menu">
           <div className="hamburger-icon" onClick={toggleMenu}>
             <span></span>
@@ -203,7 +204,19 @@ export default function Home() {
         <div className="section__text__p1">Get in Touch</div>
         <div className="title">Contact Me</div>
         <Contact />
+        <Image
+          src="/arrow.png"
+          alt="arrow"
+          className="icon arrow"
+          width={30}
+          height={30}
+          style={{ rotate: "180deg" }}
+          onClick={() => (window.location.href = "#home")}
+        />
       </section>
+      
+      <Footer />
+      
     </div>
   );
 }
