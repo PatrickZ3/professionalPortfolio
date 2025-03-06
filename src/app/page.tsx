@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import About from "./components/about";
 import SkillDetail from "./components/skillDetail"
 import Project from "./components/project"
+import Contact from "./components/contact";
 
 export default function Home() {
 
@@ -174,12 +175,13 @@ export default function Home() {
         <div className="title">Projects</div>
         <div className="skills-details-container">
           <Project />
+
         </div>
         <button
-            className="btn-learnMore"
+          className="btn-learnMore !pt-4"
           onClick={() => location.href = '#contact'}
         >
-          <div className="learnMore">More Projects </div>
+          <div className="learnMore ">More Projects </div>
           <Image
             src="/next.png"
             alt="next"
@@ -197,11 +199,11 @@ export default function Home() {
           onClick={() => (window.location.href = "#contacts")}
         />
       </section>
-  <section className="contacts" id="contacts">
-    <div className="section__text__p1">Get in Touch</div>
-    <div className="title">Contact Me</div>
-    
-  </section>
+      <section className="contacts" id="contacts">
+        <div className="section__text__p1">Get in Touch</div>
+        <div className="title">Contact Me</div>
+        <Contact />
+      </section>
     </div>
   );
 }

@@ -559,7 +559,7 @@ span {
 
 .btn-learnMore{
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.2rem;
 }
@@ -584,4 +584,125 @@ span {
 
 .btn-learnMore:hover .nextArrow {
   transform: translateX(5px);
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem 4rem;
+  border-radius: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact__content {
+  width: 100%;
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact__form_div {
+  position: relative;
+  width: 100%;
+}
+
+.contact__form_tag {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  background: white;
+  padding: 0 5px;
+}
+
+.contact__form_input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  outline: none;
+  background: none;
+}
+
+.contact__form_input:focus {
+  border-color: #171717;
+}
+
+.contact__form_input::placeholder {
+  color: #aaa;
+}
+
+.contact__form_area textarea {
+  height: 150px;
+  resize: none;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgb(53, 53, 53);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact__button:hover {
+  background: rgb(0, 0, 0);
+}
+
+.send__icon {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__container {
+      width: 90%;
+      padding: 2rem;
+  }
+}
+
+.contact__form_input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.contact__form_div {
+  margin-bottom: 1rem;
+}
+
+.contact__form_input:focus {
+  outline: none;
+  border: 2px solid #171717;
 }
