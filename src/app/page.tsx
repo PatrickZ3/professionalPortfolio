@@ -8,7 +8,7 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 
 export default function Home() {
-
+  
   const toggleMenu = () => {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
