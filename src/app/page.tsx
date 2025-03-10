@@ -6,6 +6,7 @@ import SkillDetail from "./components/skillDetail"
 import Project from "./components/project"
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import Experience from "./components/experience";
 import { useRouter } from "next/navigation"; 
 
 
@@ -50,7 +51,7 @@ export default function Home() {
         <div className="logo">Patrick<span className="dot">.</span>Lay</div>
         <div>
           <ul className="nav-links">
-            {["About", "Skills", "Projects", "Contacts"].map((item) => (
+            {["About", "Skills", "Experiences", "Projects", "Contacts"].map((item) => (
               <li key={item}>
                 <a href={`#${item.toLowerCase()}`} className="nav-item">
                   {item}
@@ -77,6 +78,7 @@ export default function Home() {
           <div className="menu-links">
             <li><a href="#about" onClick={toggleMenu}>About</a></li>
             <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
+            <li><a href="#experiences" onClick={toggleMenu}>Experiences</a></li>
             <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
             <li><a href="#contacts" onClick={toggleMenu}>Contacts</a></li>
           </div>
@@ -165,6 +167,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <Image
+          src="/arrow.png"
+          alt="arrow"
+          className="icon arrow"
+          width={30}
+          height={30}
+          onClick={() => (window.location.href = "#experiences")}
+        />
+      </section>
+      <section className="experiences" id="experiences">
+        <div className="section__text__p1">Discover My</div>
+        <div className="title">Experiences</div>
+        <div className="experience__sections ">
+          <Experience />
         </div>
         <Image
           src="/arrow.png"

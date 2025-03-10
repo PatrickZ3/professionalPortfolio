@@ -1345,6 +1345,93 @@ span {
   color: #555;
 }
 
+.experience__container {
+  max-width: 768px;
+}
+
+.experience__tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.experience__button {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  color: #333 !important;
+}
+
+.experience__icon {
+  font-size: 1rem;
+}
+
+.experience__sections {
+  display: grid;
+  grid-template-columns: .5fr;
+  justify-content: center;
+}
+
+.experience__content {
+  display: block;
+}
+
+.experience__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.experience__title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.experience__subtitle {
+  display: inline-block;
+  font-size: .9rem;
+  color: #555;
+  background: none !important;
+}
+
+.experience__calender {
+  display: flex;
+  font-size: .9rem;
+  color: #555;
+  margin-bottom: .75rem;
+}
+
+.calender {
+  margin-right: 1.3px;
+}
+
+.experience__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #757575 !important;
+}
+
+.experience__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  transform: translate(6px, -7px);
+  background-color: #757575 !important;
+}
+
+.present__container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiences {
+  position: relative;
+}
+
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
