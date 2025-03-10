@@ -25,7 +25,7 @@ export default function Project() {
                         height={300}
                     />
 
-                    <div className="skills-sub-title project-title">
+                    <div className="skills-sub-title">
                         {project.name}
                     </div>
                     <div className="project-description">{project.description}</div>
