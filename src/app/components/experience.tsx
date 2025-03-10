@@ -50,11 +50,11 @@ function renderExperienceData({ role, company, date }: ExperienceData, index: nu
 
 export default function Experience() {
     const experienceList: ExperienceData[] = [
-        { role: "E-Sports Athlete", company: "Toronto Metropolitan University", date: "Sep.2021 - Apr.2024" },
-        { role: "Software Engineer", company: "Armonía", date: "Sep.2024 - Dec.2024" }
+        { role: "E-Sports Athlete", company: "Toronto Metropolitan University", date: "Sep 2021 - Apr 2024" },
+        { role: "Software Engineer", company: "Armonía", date: "Sep 2024 - Dec 2024" },
     ];
     return (
-        <div className="experience__container container">
+        <div>
             <div className="experience__tabs">
                 <div className="experience__button button--flex">
                     <i className="uil uil-briefcase-alt experience__icon"></i>

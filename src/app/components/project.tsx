@@ -14,7 +14,7 @@ interface ProjectType {
 export default function Project() {
     const featuredProject = projectsData.find(item => item.input === "featuredProject")?.return || [];
     return (
-        <div className="about-containers !m-0">
+        <div className="about-containers !  m-0">
             {featuredProject.map((project: ProjectType, index: number) => (
                 <div key={index} className="details-container color-container flex flex-col items-center">
                     <Image

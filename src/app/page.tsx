@@ -180,9 +180,7 @@ export default function Home() {
       <section className="experiences" id="experiences">
         <div className="section__text__p1">Discover My</div>
         <div className="title">Experiences</div>
-        <div className="experience__sections ">
           <Experience />
-        </div>
         <Image
           src="/arrow.png"
           alt="arrow"
