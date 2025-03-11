@@ -247,24 +247,24 @@ const __TURBOPACK__default__export__ = [
         input: "featuredProject",
         return: [
             {
-                name: "featreProject1",
-                image: "/holder.png",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-                github: "https://www.google.com",
-                liveDemo: "https://www.google.com"
+                name: "Coaca",
+                image: "/coaca.png",
+                description: "Simple Weather WebApp that shows the current weather of a city. It uses the OpenWeatherMap API to get the weather data.",
+                github: "https://github.com/PatrickZ3/Coaca2",
+                liveDemo: "https://coaca2.vercel.app"
             },
             {
-                name: "featreProject2",
-                image: "/holder.png",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-                github: "https://www.google.com",
-                liveDemo: "https://www.google.com"
+                name: "Gridfolio",
+                image: "/lightPortfolio.png",
+                description: "Gridfolio is a modern, grid-based portfolio with a windowed UI, designed for an intuitive and stylish showcase of projects and experiences. It blends minimalism with interactivity, making self-presentation dynamic and engaging. ",
+                github: "https://github.com/PatrickZ3/portoflioo",
+                liveDemo: "https://portoflioo.vercel.app"
             },
             {
-                name: "featreProject3",
-                image: "/holder.png",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-                github: "https://www.google.com",
+                name: "Professional Portfolio",
+                image: "/portfolio.png",
+                description: "A sleek and modern portfolio showcasing skills, experiences, and projects with a clean, intuitive design. Built for easy navigation and professional presentation, it highlights expertise in software engineering through an interactive, responsive layout.",
+                github: "https://github.com/PatrickZ3/professionalPortfolio",
                 liveDemo: "https://www.google.com"
             }
         ]
@@ -273,18 +273,60 @@ const __TURBOPACK__default__export__ = [
         input: "projectsList",
         return: [
             {
-                name: "Project2",
-                image: "/holder.png",
-                description: "test2",
-                github: "https://www.google.com",
-                liveDemo: "https://www.google.com"
+                name: "Coaca",
+                image: "/coaca.png",
+                description: "Simple Weather WebApp that shows the current weather of a city. It uses the OpenWeatherMap API to get the weather data.",
+                github: "https://github.com/PatrickZ3/Coaca2",
+                liveDemo: "https://coaca2.vercel.app"
             },
             {
-                name: "Project3",
-                image: "/holder.png",
-                description: "test3",
-                github: "https://www.google.com",
-                liveDemo: "https://www.google.com"
+                name: "Gridfolio",
+                image: "/lightPortfolio.png",
+                description: "Gridfolio is a modern, grid-based portfolio with a windowed UI, designed for an intuitive and stylish showcase of projects and experiences. It blends minimalism with interactivity, making self-presentation dynamic and engaging. ",
+                github: "https://github.com/PatrickZ3/portoflioo",
+                liveDemo: "https://portoflioo.vercel.app"
+            },
+            {
+                name: "Coaca",
+                image: "/coaca.png",
+                description: "Simple Weather WebApp that shows the current weather of a city. It uses the OpenWeatherMap API to get the weather data.",
+                github: "https://github.com/PatrickZ3/Coaca2",
+                liveDemo: "https://coaca2.vercel.app"
+            },
+            {
+                name: "Gridfolio",
+                image: "/lightPortfolio.png",
+                description: "Gridfolio is a modern, grid-based portfolio with a windowed UI, designed for an intuitive and stylish showcase of projects and experiences. It blends minimalism with interactivity, making self-presentation dynamic and engaging. ",
+                github: "https://github.com/PatrickZ3/portoflioo",
+                liveDemo: "https://portoflioo.vercel.app"
+            },
+            {
+                name: "Coaca",
+                image: "/coaca.png",
+                description: "Simple Weather WebApp that shows the current weather of a city. It uses the OpenWeatherMap API to get the weather data.",
+                github: "https://github.com/PatrickZ3/Coaca2",
+                liveDemo: "https://coaca2.vercel.app"
+            },
+            {
+                name: "Gridfolio",
+                image: "/lightPortfolio.png",
+                description: "Gridfolio is a modern, grid-based portfolio with a windowed UI, designed for an intuitive and stylish showcase of projects and experiences. It blends minimalism with interactivity, making self-presentation dynamic and engaging. ",
+                github: "https://github.com/PatrickZ3/portoflioo",
+                liveDemo: "https://portoflioo.vercel.app"
+            },
+            {
+                name: "Coaca",
+                image: "/coaca.png",
+                description: "Simple Weather WebApp that shows the current weather of a city. It uses the OpenWeatherMap API to get the weather data.",
+                github: "https://github.com/PatrickZ3/Coaca2",
+                liveDemo: "https://coaca2.vercel.app"
+            },
+            {
+                name: "Gridfolio",
+                image: "/lightPortfolio.png",
+                description: "Gridfolio is a modern, grid-based portfolio with a windowed UI, designed for an intuitive and stylish showcase of projects and experiences. It blends minimalism with interactivity, making self-presentation dynamic and engaging. ",
+                github: "https://github.com/PatrickZ3/portoflioo",
+                liveDemo: "https://portoflioo.vercel.app"
             }
         ]
     }
@@ -311,7 +353,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$projec
 function Project() {
     const featuredProject = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$project$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].find((item)=>item.input === "featuredProject")?.return || [];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "about-containers !  m-0",
+        className: "about-containers !m-0",
         children: featuredProject.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "details-container color-container flex flex-col items-center",
                 children: [
@@ -950,8 +992,8 @@ function Home() {
     const programmingLanguages = [
         "Javascript",
         "Python",
-        "SQL",
         "Typescript",
+        "SQL",
         "HTML",
         "CSS",
         "PostgreSQL"
@@ -966,7 +1008,7 @@ function Home() {
         "Git",
         "Docker",
         "AWS",
-        "VS Code"
+        "VSCode"
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
@@ -1108,6 +1150,7 @@ function Home() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                             href: "#about",
+                                            className: "links",
                                             onClick: toggleMenu,
                                             children: "About"
                                         }, void 0, false, {
@@ -1123,6 +1166,7 @@ function Home() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                             href: "#skills",
+                                            className: "links",
                                             onClick: toggleMenu,
                                             children: "Skills"
                                         }, void 0, false, {
@@ -1138,6 +1182,7 @@ function Home() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                             href: "#experiences",
+                                            className: "links",
                                             onClick: toggleMenu,
                                             children: "Experiences"
                                         }, void 0, false, {
@@ -1153,6 +1198,7 @@ function Home() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                             href: "#projects",
+                                            className: "links",
                                             onClick: toggleMenu,
                                             children: "Projects"
                                         }, void 0, false, {
@@ -1168,6 +1214,7 @@ function Home() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                             href: "#contacts",
+                                            className: "links",
                                             onClick: toggleMenu,
                                             children: "Contacts"
                                         }, void 0, false, {

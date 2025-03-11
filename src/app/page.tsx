@@ -24,8 +24,8 @@ export default function Home() {
   const programmingLanguages = [
     "Javascript",
     "Python",
-    "SQL",
     "Typescript",
+    "SQL",
     "HTML",
     "CSS",
     "PostgreSQL"
@@ -42,7 +42,7 @@ export default function Home() {
     "Git",
     "Docker",
     "AWS",
-    "VS Code"
+    "VSCode"
   ];
 
   return (
@@ -76,11 +76,11 @@ export default function Home() {
             <span></span>
           </div>
           <div className="menu-links">
-            <li><a href="#about" onClick={toggleMenu}>About</a></li>
-            <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
-            <li><a href="#experiences" onClick={toggleMenu}>Experiences</a></li>
-            <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-            <li><a href="#contacts" onClick={toggleMenu}>Contacts</a></li>
+            <li><a href="#about" className="links" onClick={toggleMenu}>About</a></li>
+            <li><a href="#skills" className="links" onClick={toggleMenu}>Skills</a></li>
+            <li><a href="#experiences" className="links" onClick={toggleMenu}>Experiences</a></li>
+            <li><a href="#projects" className="links" onClick={toggleMenu}>Projects</a></li>
+            <li><a href="#contacts" className="links" onClick={toggleMenu}>Contacts</a></li>
           </div>
         </div>
       </nav>

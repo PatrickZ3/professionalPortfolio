@@ -436,10 +436,6 @@
     margin: calc(var(--spacing) * 0) !important;
   }
 
-  .m-0 {
-    margin: calc(var(--spacing) * 0);
-  }
-
   .block {
     display: block;
   }
@@ -696,14 +692,11 @@
     flex: 1;
     max-width: 300px;
     padding: 24px;
+    padding: 1rem !important;
   }
 
   .project-description {
     font-size: .8rem;
-  }
-
-  .details-container {
-    padding: 1rem !important;
   }
 
   .btn-container {
@@ -726,6 +719,43 @@
   .article-container {
     gap: 1rem !important;
   }
+
+  .btnProj {
+    font-size: .7rem !important;
+  }
+}
+
+@media screen and (width <= 1024px) {
+  .profile {
+    margin: 0;
+  }
+
+  .skill-item {
+    gap: 0 !important;
+  }
+
+  .about-containers {
+    gap: 1rem !important;
+  }
+
+  .btn-container {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .project-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .allproject-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .btnProj {
+    font-size: .8rem !important;
+  }
 }
 
 @media screen and (width <= 768px) {
@@ -735,6 +765,168 @@
 
   .hamburger-nav {
     display: flex !important;
+  }
+
+  .links {
+    padding: .5rem !important;
+    font-size: 1.3rem !important;
+  }
+
+  .btn-container {
+    display: flex;
+    gap: .5rem;
+    padding: 0 !important;
+  }
+
+  .project-btn {
+    padding: 0 !important;
+    font-size: .6rem !important;
+    width: auto !important;
+    min-width: 80px !important;
+  }
+
+  .project-btn img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .profile {
+    margin: 0 4rem;
+    gap: 1rem !important;
+  }
+
+  .section__pic-container {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem !important;
+  }
+
+  .details-container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .article {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .project-btn {
+    width: auto !important;
+    min-width: unset !important;
+    padding: .5rem 1rem !important;
+    font-size: .8rem !important;
+  }
+
+  .experience__sections {
+    flex-direction: column;
+    align-items: center;
+    display: flex !important;
+  }
+
+  .experience__rounder {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .experience__line {
+    transform: translate(0) !important;
+  }
+
+  .allproject-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media screen and (width <= 480px) {
+  .profile {
+    padding: 0 !important;
+    margin: .5rem !important;
+    gap: 0 !important;
+  }
+
+  .section__pic-container {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .title {
+    font-size: 2rem !important;
+  }
+
+  .section__text__p2 {
+    font-size: 1rem !important;
+  }
+
+  .btn {
+    border-radius: 2rem;
+    padding: .5rem !important;
+    width: 8rem !important;
+    font-size: .7rem !important;
+  }
+
+  .about {
+    margin: 0 !important;
+  }
+
+  .terminal {
+    max-width: 90vw !important;
+    margin: 0 auto !important;
+    font-size: .8rem !important;
+  }
+
+  .terminal-header {
+    height: 24px !important;
+  }
+
+  .statement {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    line-height: 20px !important;
+  }
+
+  .input-statement {
+    font-size: 1rem !important;
+  }
+
+  .skills {
+    margin: 0 !important;
+  }
+
+  .experiences {
+    margin: 0 1rem !important;
+  }
+
+  .projects {
+    margin: 0 1rem !important;
+  }
+
+  .contacts {
+    margin: 0 1rem !important;
+  }
+
+  .allproject-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
 }
 
@@ -1168,6 +1360,7 @@ span {
   border-color: #a3a3a3;
   text-align: center;
   padding: 2rem;
+  justify-content: space-between;
 }
 
 .skills {
@@ -1536,6 +1729,42 @@ span {
   min-height: auto;
   height: auto;
   padding-bottom: 10vh;
+}
+
+.allproject-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+  align-items: stretch;
+}
+
+.allproject-detail-container {
+  flex: 1;
+  background: #fff;
+  border-radius: 2rem;
+  border: .1rem solid #353535;
+  border-color: #a3a3a3;
+  text-align: center;
+  padding: 2rem;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.backArrow {
+  margin: 3rem 0 0 3rem;
+  cursor: pointer;
+}
+
+.btnProj {
+  font-weight: 600;
+  transition: all .3s;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  font-size: .8rem;
 }
 
 @property --tw-rotate-x {
