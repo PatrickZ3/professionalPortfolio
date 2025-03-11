@@ -1,6 +1,30 @@
 {
   "version": 4,
   "routes": {
+    "/allProject": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/allProject",
+      "dataRoute": "/allProject.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -53,37 +77,13 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
-    },
-    "/allProject": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/allProject",
-      "dataRoute": "/allProject.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "786dd5d6521147e519305b4520450025",
-    "previewModeSigningKey": "4c5ac27f1a10498055701827951e598983d036a7f8fe37330831c7cb1cb75235",
-    "previewModeEncryptionKey": "591575ed15b573d224de0c8b65478c5653e7445a24ad13f001dd40e142abce8e"
+    "previewModeId": "f034da11eb19ca70a9d48837705a007b",
+    "previewModeSigningKey": "8381c2ffca52b788140404d1dd909a8f38d762336c0f1219b63505a5b5d1cb6a",
+    "previewModeEncryptionKey": "7e12307bab9e576cd8a3ef734900b7a6f01217fb4668e379a573a97160f60948"
   }
 }
