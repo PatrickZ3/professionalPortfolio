@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import statements from "../data/about-me";
+import { statements } from "../data/about-me";
 
 interface Statement {
     input: string;

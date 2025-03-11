@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import projectsData from "../data/project"
+import { projectsData } from "../data/project"
 import { useRouter } from "next/navigation"; 
 
 interface ProjectType {

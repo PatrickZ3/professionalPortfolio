@@ -1,4 +1,4 @@
-export default [
+export const statements = [
     {
       input: 'Patrick.currentLocation',
       return: '"Toronto, Canada"',

@@ -100,7 +100,7 @@ export default function Home() {
               className="btn btn-color-1"
               onClick={() => location.href = '#contact'}
             >
-              Let's Connect 👋
+              {`Let's Connect 👋`}
             </button>
           </div>
           <div className="socials-container">

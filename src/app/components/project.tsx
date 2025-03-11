@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import projectsData from "../data/project"
+import {projectsData} from "../data/project"
 
 interface ProjectType {
     name: string;

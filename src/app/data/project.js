@@ -1,4 +1,4 @@
-export default [
+export const projectsData = [
   {
     input: "featuredProject",
     return: [

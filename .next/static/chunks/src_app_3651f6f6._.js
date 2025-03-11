@@ -6,9 +6,9 @@
 var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "statements": (()=>statements)
 });
-const __TURBOPACK__default__export__ = [
+const statements = [
     {
         input: 'Patrick.currentLocation',
         return: '"Toronto, Canada"'
@@ -82,7 +82,7 @@ const About = ()=>{
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "terminal-window",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Statements, {
-                        statements: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$about$2d$me$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+                        statements: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$about$2d$me$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["statements"]
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/about.tsx",
                         lineNumber: 21,
@@ -240,9 +240,9 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { g: global, d: __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "projectsData": (()=>projectsData)
 });
-const __TURBOPACK__default__export__ = [
+const projectsData = [
     {
         input: "featuredProject",
         return: [
@@ -351,7 +351,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$projec
 ;
 ;
 function Project() {
-    const featuredProject = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$project$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].find((item)=>item.input === "featuredProject")?.return || [];
+    const featuredProject = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$data$2f$project$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["projectsData"].find((item)=>item.input === "featuredProject")?.return || [];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "about-containers !m-0",
         children: featuredProject.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1290,7 +1290,7 @@ function Home() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "btn btn-color-1",
                                         onClick: ()=>location.href = '#contact',
-                                        children: "Let's Connect 👋"
+                                        children: `Let's Connect 👋`
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/page.tsx",
                                         lineNumber: 99,
