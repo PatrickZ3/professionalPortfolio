@@ -7,29 +7,68 @@ import Project from "./components/project"
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Experience from "./components/experience";
-import { useRouter } from "next/navigation"; 
-import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 
 export default function Home() {
 
   const router = useRouter();
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
+
+  useEffect(() => {
+    const handleTouchStart = (e: TouchEvent) => {
+      if (window.innerWidth <= 480) {
+        setTouchStartX(e.touches[0].clientX);
+      }
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      if (window.innerWidth <= 480) {
+        setTouchEndX(e.touches[0].clientX);
+      }
+    };
+
+    const handleTouchEnd = () => {
+      if (window.innerWidth > 480) return;
+
+      const swipeDistance = touchStartX - touchEndX;
+      if (swipeDistance > 50) {
+        
+        setIsMenuOpen(true);
+      } else if (swipeDistance < -50) {
+        
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("touchstart", handleTouchStart);
+    document.addEventListener("touchmove", handleTouchMove);
+    document.addEventListener("touchend", handleTouchEnd);
+
+    return () => {
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchmove", handleTouchMove);
+      document.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [touchStartX, touchEndX]);
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const menu = document.querySelector(".menu-links");
       const icon = document.querySelector(".hamburger-icon");
-      const overlay = document.querySelector(".overlay");
 
-      // Check if menu is open and if the click is outside both menu & icon
       if (
-        menu?.classList.contains("open") &&
+        isMenuOpen &&
+        menu &&
         !menu.contains(event.target as Node) &&
-        !icon?.contains(event.target as Node)
+        icon &&
+        !icon.contains(event.target as Node)
       ) {
-        menu.classList.remove("open");
-        icon?.classList.remove("open");
-        overlay?.classList.remove("show");
+        setIsMenuOpen(false);
       }
     };
 
@@ -37,17 +76,11 @@ export default function Home() {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
-  
-  const toggleMenu = (event: React.MouseEvent) => {
-    event.stopPropagation(); // Prevent closing the menu immediately when clicking the icon
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    const overlay = document.querySelector(".overlay");
+  }, [isMenuOpen]);
 
-    const isOpen = menu?.classList.toggle("open");
-    icon?.classList.toggle("open");
-    overlay?.classList.toggle("show", isOpen);
+  const toggleMenu = (event: React.MouseEvent) => {
+    event.stopPropagation();
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const programmingLanguages = [
@@ -96,7 +129,7 @@ export default function Home() {
           </ul>
         </div>
       </nav>
-      <div className="overlay"></div>
+      <div className={`overlay ${isMenuOpen ? "show" : ""}`} onClick={() => setIsMenuOpen(false)}></div>
       <nav className="hamburger-nav">
         <div className="logo" id="home">Patrick<span className="dot">.</span>Lay</div>
         <div className="hamburger-menu">
@@ -105,7 +138,7 @@ export default function Home() {
             <span></span>
             <span></span>
           </div>
-          <div className="menu-links">
+          <div className={`menu-links ${isMenuOpen ? "open" : ""}`}>
             <li><a href="#about" className="links" onClick={toggleMenu}>About</a></li>
             <li><a href="#skills" className="links" onClick={toggleMenu}>Skills</a></li>
             <li><a href="#experiences" className="links" onClick={toggleMenu}>Experiences</a></li>
@@ -210,7 +243,7 @@ export default function Home() {
       <section className="experiences" id="experiences">
         <div className="section__text__p1">Discover My</div>
         <div className="title">Experiences</div>
-          <Experience />
+        <Experience />
         <Image
           src="/arrow.png"
           alt="arrow"
@@ -263,9 +296,9 @@ export default function Home() {
           onClick={() => (window.location.href = "#home")}
         />
       </section>
-      
+
       <Footer />
-      
+
     </div>
   );
 }
