@@ -11,8 +11,13 @@
   .about-containers {
     display: flex;
     justify-content: center;
-    max-width: 1440px !important; /* Adjust based on needs */
+    max-width: 1200px !important; /* Adjust based on needs */
     gap: 2rem;
+    
+  }
+  .details-container {
+    max-width: 360px; /* Adjust to avoid stretching */
+    flex: 1;
   }
 }
 
