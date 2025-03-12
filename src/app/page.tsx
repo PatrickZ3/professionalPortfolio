@@ -8,17 +8,46 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Experience from "./components/experience";
 import { useRouter } from "next/navigation"; 
+import { useEffect } from "react";
 
 
 export default function Home() {
 
   const router = useRouter();
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const menu = document.querySelector(".menu-links");
+      const icon = document.querySelector(".hamburger-icon");
+      const overlay = document.querySelector(".overlay");
+
+      // Check if menu is open and if the click is outside both menu & icon
+      if (
+        menu?.classList.contains("open") &&
+        !menu.contains(event.target as Node) &&
+        !icon?.contains(event.target as Node)
+      ) {
+        menu.classList.remove("open");
+        icon?.classList.remove("open");
+        overlay?.classList.remove("show");
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
   
-  const toggleMenu = () => {
+  const toggleMenu = (event: React.MouseEvent) => {
+    event.stopPropagation(); // Prevent closing the menu immediately when clicking the icon
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
-    menu?.classList.toggle("open");
+    const overlay = document.querySelector(".overlay");
+
+    const isOpen = menu?.classList.toggle("open");
     icon?.classList.toggle("open");
+    overlay?.classList.toggle("show", isOpen);
   };
 
   const programmingLanguages = [
@@ -67,6 +96,7 @@ export default function Home() {
           </ul>
         </div>
       </nav>
+      <div className="overlay"></div>
       <nav className="hamburger-nav">
         <div className="logo" id="home">Patrick<span className="dot">.</span>Lay</div>
         <div className="hamburger-menu">

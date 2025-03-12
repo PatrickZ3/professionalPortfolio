@@ -105,7 +105,7 @@
     gap: 1rem !important;
   }
 
-  .btnProj{
+  .btnProj {
 
     font-size: 0.7rem !important;
   }
@@ -141,7 +141,7 @@
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   }
 
-  .btnProj{
+  .btnProj {
 
     font-size: 0.8rem !important;
   }
@@ -253,15 +253,45 @@
 }
 
 @media screen and (max-width: 480px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    /* Pushes elements apart */
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    margin-left: 0;
+    /* Ensures it's positioned to the left */
+    text-align: left;
+    flex-grow: 1;
+    /* Takes up more space */
+  }
+
+  .hamburger-nav {
+    display: flex !important;
+    justify-content: flex-end;
+    /* Pushes it to the right */
+    height: 15vh !important;
+  }
+
+  .hamburger-menu {
+    margin-right: 0;
+    /* Aligns it properly to the right */
+  }
+
   .profile {
     padding: 0 !important;
     margin: 0.5rem !important;
     gap: 0 !important;
+    height: 40vh !important;
   }
 
   .section__pic-container {
     width: 250px !important;
     height: 250px !important;
+
   }
 
   .title {
@@ -473,56 +503,51 @@ a:hover {
 }
 
 .menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0%;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 200px;
+  height: 100vh;
+  background-color: #2E2E2E !important;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 .menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: #f8f8f8;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: color 0.3s ease;
 }
 
 .menu-links li {
   list-style: none;
+  margin: 1rem 0;
 }
 
 .menu-links.open {
-  max-height: 300px;
+  right: 0;
+  /* Slide in */
 }
 
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  z-index: 999; /* Ensure it's above other elements but below the menu */
+  display: none; /* Hidden by default */
 }
 
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
+.overlay.show {
+  display: block; /* Show when menu is open */
 }
 
 section {
@@ -1166,12 +1191,12 @@ span {
   flex-direction: column;
 }
 
-.backArrow{
+.backArrow {
   margin: 3rem 0rem 0rem 3rem;
   cursor: pointer;
 }
 
-.btnProj{
+.btnProj {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
