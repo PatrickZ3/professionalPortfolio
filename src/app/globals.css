@@ -6,6 +6,17 @@
   --font-mono: var(--font-geist-mono);
 } */
 
+/* Large screens above 1440px and up to 1920px */
+@media screen and (max-width: 1920px) {
+  .about-containers {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px !important; /* Adjust based on needs */
+    gap: 2rem;
+  }
+}
+
+
 /* for extra large screens */
 @media screen and (max-width: 1440px) {
   .about-containers {
