@@ -7,7 +7,7 @@
 } */
 
 /* Large screens above 1440px and up to 1920px */
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1920px) and (max-width: 1920px) {
   .about-containers {
     display: flex;
     justify-content: center;
