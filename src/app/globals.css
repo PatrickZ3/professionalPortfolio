@@ -7,13 +7,12 @@
 } */
 
 /* Large screens above 1440px and up to 1920px */
-@media screen and (min-width: 1920px) and (max-width: 1920px) {
+@media screen and (max-width: 1920px) {
   .about-containers {
     display: flex;
     justify-content: center;
     max-width: 1200px !important; /* Adjust based on needs */
     gap: 2rem;
-    
   }
   .details-container {
     max-width: 360px; /* Adjust to avoid stretching */
