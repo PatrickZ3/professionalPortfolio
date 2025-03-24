@@ -15,7 +15,7 @@ export const statements = [
     {
       input: 'Patrick.currentFocus',
       return:
-        '"Meta Front-End Developer Professional Certificate - Coursera"',
+        '"Making more personal projects"',
     },
   ];
   
