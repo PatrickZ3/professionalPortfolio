@@ -3,6 +3,13 @@ export const projectsData = [
     input: "featuredProject",
     return: [
       {
+        name: "Kompak",
+        image: "/kompak.png",
+        description: "A sleek and intuitive project management tool inspired by Jira. Kompak lets users create boards, add and manage tasks with drag-and-drop functionality, and keep track of progress in a clean, dark-themed UI. Built with Next.js, Supabase, and Radix UI for a smooth and responsive experience.",
+        github: "https://github.com/PatrickZ3/Kompak",
+        liveDemo: "https://kompak.vercel.app",
+      },
+      {
         name: "Coaca",
         image: "/coaca.png",
         description: "Simple Weather WebApp that shows the current weather of a city. It uses the OpenWeatherMap API to get the weather data.",
@@ -10,18 +17,11 @@ export const projectsData = [
         liveDemo: "https://coaca2.vercel.app",
       },
       {
-        name: "Gridfolio",
-        image: "/lightPortfolio.png",
-        description: "Gridfolio is a modern, grid-based portfolio with a windowed UI, designed for an intuitive and stylish showcase of projects and experiences. It blends minimalism with interactivity, making self-presentation dynamic and engaging. ",
-        github: "https://github.com/PatrickZ3/portoflioo",
-        liveDemo: "https://portoflioo.vercel.app",
-      },
-      {
-        name: "Professional Portfolio",
-        image: "/portfolio.png",
-        description: "A sleek and modern portfolio showcasing skills, experiences, and projects with a clean, intuitive design. Built for easy navigation and professional presentation, it highlights expertise in software engineering through an interactive, responsive layout.",
-        github: "https://github.com/PatrickZ3/professionalPortfolio",
-        liveDemo: "https://patlay.vercel.app",
+        name: "onTrack",
+        image: "/ontrack.png",
+        description: "A task manager webapp 'onTrack,' a web application designed for engineering students, seamlessly integrates task management and collaboration. With features like shared calendars, progress tracking, and priority assignment, it empowers students to navigate academic complexities efficiently, fostering teamwork and success in engineering endeavors.",
+        github: "https://github.com/PatrickZ3/onTrack",
+        liveDemo: "https://github.com/PatrickZ3/onTrack",
       },
     ],
   },
@@ -49,7 +49,20 @@ export const projectsData = [
         github: "https://github.com/PatrickZ3/professionalPortfolio",
         liveDemo: "https://patlay.vercel.app",
       },
-      
+      {
+        name: "Kompak",
+        image: "/kompak.png",
+        description: "A sleek and intuitive project management tool inspired by Jira. Kompak lets users create boards, add and manage tasks with drag-and-drop functionality, and keep track of progress in a clean, dark-themed UI. Built with Next.js, Supabase, and Radix UI for a smooth and responsive experience.",
+        github: "https://github.com/PatrickZ3/Kompak",
+        liveDemo: "https://kompak.vercel.app",
+      },
+      {
+        name: "onTrack",
+        image: "/ontrack.png",
+        description: "A task manager webapp 'onTrack,' a web application designed for engineering students, seamlessly integrates task management and collaboration. With features like shared calendars, progress tracking, and priority assignment, it empowers students to navigate academic complexities efficiently, fostering teamwork and success in engineering endeavors.",
+        github: "https://github.com/PatrickZ3/onTrack",
+        liveDemo: "https://github.com/PatrickZ3/onTrack",
+      },
     ],
   },
 ];
