@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import {projectsData} from "../data/project"
+import { projectsData } from "../data/project"
+import ReactMarkdown from "react-markdown";
 
 interface ProjectType {
     name: string;
@@ -28,7 +29,10 @@ export default function Project() {
                     <div className="skills-sub-title">
                         {project.name}
                     </div>
-                    <div className="project-description">{project.description}</div>
+                    <div className="project-description">
+                        <ReactMarkdown>{project.description}</ReactMarkdown>
+                    </div>
+
                     <div className="btn-container">
                         <button className="btn btn-color-2 project-btn flex items-center gap-1" onClick={() => window.open(project.github, '_blank')}>
                             <Image

@@ -1,12 +1,12 @@
 export const projectsData = [
-  {
+   {
     input: "featuredProject",
     return: [
       {
         name: "Kompak",
         image: "/kompak.png",
         description:
-          "A sleek and intuitive project management tool inspired by Jira. Kompak lets users create boards, add and manage tasks with drag-and-drop functionality, and keep track of progress in a clean, dark-themed UI. Built with Next.js, Supabase, and Radix UI for a smooth and responsive experience.",
+          "A sleek and intuitive project management tool inspired by **Jira**. Kompak lets users create boards, add and manage tasks with drag-and-drop functionality, and keep track of progress in a clean, dark-themed UI. Built with **Next.js**, **Supabase**, and **Radix UI** for a smooth and responsive experience.",
         github: "https://github.com/PatrickZ3/Kompak",
         liveDemo: "https://kompak.vercel.app",
       },
@@ -14,17 +14,17 @@ export const projectsData = [
         name: "TheCallBacks",
         image: "/eventure.png",
         description:
-          "TheCallBacks is a web app built at Toronto Tech Week Hackathon 2025. It helps users plan and manage event selections with AI-powered suggestions tailored to their preferences and availability, integrating OpenAI, Perplexity API, and ElevenLabs Voice AI for personalized, natural interactions.",
+          "**TheCallBacks** is a web app built at **Toronto Tech Week Hackathon 2025**. It helps users plan and manage event selections with **AI-powered suggestions** tailored to their preferences and availability, integrating **OpenAI**, **Perplexity API**, and **ElevenLabs Voice AI** for personalized, natural interactions.",
         github: "https://github.com/Sawyerh1229/TheCallBacks",
         liveDemo: "https://github.com/Sawyerh1229/TheCallBacks",
       },
       {
-        name: "onTrack",
-        image: "/ontrack.png",
+        name: "Jajan",
+        image: "/jajan.png",
         description:
-          "A task manager webapp 'onTrack,' a web application designed for engineering students, seamlessly integrates task management and collaboration. With features like shared calendars, progress tracking, and priority assignment, it empowers students to navigate academic complexities efficiently, fostering teamwork and success in engineering endeavors.",
-        github: "https://github.com/PatrickZ3/onTrack",
-        liveDemo: "https://github.com/PatrickZ3/onTrack",
+          "The name, **Jajan**, is inspired by my home country, **Indonesia**. It means **buying treats**. I’m pretty bad at making good **financial decisions** due to my **impulsiveness**, so I built this app to hold myself accountable for my spending.",
+        github: "https://github.com/PatrickZ3/Jajan",
+        liveDemo: "https://github.com/PatrickZ3/Jajan",
       },
     ],
   },
@@ -78,6 +78,14 @@ export const projectsData = [
           "TheCallBacks is a web app built at Toronto Tech Week Hackathon 2025. It helps users plan and manage event selections with AI-powered suggestions tailored to their preferences and availability, integrating OpenAI, Perplexity API, and ElevenLabs Voice AI for personalized, natural interactions.",
         github: "https://github.com/Sawyerh1229/TheCallBacks",
         liveDemo: "https://github.com/Sawyerh1229/TheCallBacks",
+      },
+      {
+        name: "Jajan",
+        image: "/jajan.png",
+        description:
+          "the name is inspired by my home country, Indonesia. It means buying treats. I’m pretty bad at making good financial decisions due to my impulsiveness, so I built this app to hold myself accountable for my spending.",
+        github: "https://github.com/PatrickZ3/Jajan",
+        liveDemo: "https://github.com/PatrickZ3/Jajan",
       },
     ],
   },
