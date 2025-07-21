@@ -15,7 +15,7 @@ export const statements = [
     {
       input: 'Patrick.currentFocus',
       return:
-        '"Making more personal projects"',
+        '"Interview prep grind ψ(｀∇´)ψ"',
     },
   ];
   
