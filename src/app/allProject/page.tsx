@@ -54,7 +54,7 @@ export default function AllProject() {
                 Github
               </button>
               <button className="btnProj btn-color-2 project-btn flex items-center gap-1" onClick={() => window.open(project.liveDemo, '_blank')}>
-                Live Demo
+                Preview
                 <Image
                   src="/external.png"
                   alt="external"

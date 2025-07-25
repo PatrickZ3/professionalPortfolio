@@ -200,7 +200,7 @@ export default function Home() {
           onClick={() => (window.location.href = "#skills")}
         />
       </section>
-      <section className="skills" id="skills">
+      {/* <section className="skills" id="skills">
         <div className="section__text__p1"> Explore My</div>
         <div className="title">Skills</div>
         <div className="skills-details-container">
@@ -239,7 +239,7 @@ export default function Home() {
           height={30}
           onClick={() => (window.location.href = "#experiences")}
         />
-      </section>
+      </section> */}
       <section className="experiences" id="experiences">
         <div className="section__text__p1">Discover My</div>
         <div className="title">Experiences</div>
