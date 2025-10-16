@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import About from "./components/about";
-import SkillDetail from "./components/skillDetail"
+// import SkillDetail from "./components/skillDetail"
 import Project from "./components/project"
 import Contact from "./components/contact";
 import Footer from "./components/footer";
@@ -83,29 +83,29 @@ export default function Home() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const programmingLanguages = [
-    "Javascript",
-    "Python",
-    "Typescript",
-    "SQL",
-    "HTML",
-    "CSS",
-    "PostgreSQL"
-  ];
+  // const programmingLanguages = [
+  //   "Javascript",
+  //   "Python",
+  //   "Typescript",
+  //   "SQL",
+  //   "HTML",
+  //   "CSS",
+  //   "PostgreSQL"
+  // ];
 
-  const technologies = [
-    "Next.js",
-    "Node.js",
-    "React.js",
-    "Tailwind",
-  ];
+  // const technologies = [
+  //   "Next.js",
+  //   "Node.js",
+  //   "React.js",
+  //   "Tailwind",
+  // ];
 
-  const developerTools = [
-    "Git",
-    "Docker",
-    "AWS",
-    "VSCode"
-  ];
+  // const developerTools = [
+  //   "Git",
+  //   "Docker",
+  //   "AWS",
+  //   "VSCode"
+  // ];
 
   return (
     <div>
