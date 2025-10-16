@@ -11,10 +11,10 @@ export const projectsData = [
         liveDemo: "https://kompak.vercel.app",
       },
       {
-        name: "TheCallBacks",
+        name: "Eventure",
         image: "/eventure.png",
         description:
-          "**TheCallBacks** is a web app built at **Toronto Tech Week Hackathon 2025**. It helps users plan and manage event selections with **AI-powered suggestions** tailored to their preferences and availability, integrating **OpenAI**, **Perplexity API**, and **ElevenLabs Voice AI** for personalized, natural interactions.",
+          "**Eventure** is a web app built at **Toronto Tech Week Hackathon 2025**. It helps users plan and manage event selections with **AI-powered suggestions** tailored to their preferences and availability, integrating **OpenAI**, **Perplexity API**, and **ElevenLabs Voice AI** for personalized, natural interactions.",
         github: "https://github.com/Sawyerh1229/TheCallBacks",
         liveDemo: "https://github.com/Sawyerh1229/TheCallBacks",
       },
@@ -72,10 +72,10 @@ export const projectsData = [
         liveDemo: "https://github.com/PatrickZ3/onTrack",
       },
       {
-        name: "TheCallBacks",
+        name: "Eventure",
         image: "/eventure.png",
         description:
-          "TheCallBacks is a web app built at Toronto Tech Week Hackathon 2025. It helps users plan and manage event selections with AI-powered suggestions tailored to their preferences and availability, integrating OpenAI, Perplexity API, and ElevenLabs Voice AI for personalized, natural interactions.",
+          "Eventure is a web app built at Toronto Tech Week Hackathon 2025. It helps users plan and manage event selections with AI-powered suggestions tailored to their preferences and availability, integrating OpenAI, Perplexity API, and ElevenLabs Voice AI for personalized, natural interactions.",
         github: "https://github.com/Sawyerh1229/TheCallBacks",
         liveDemo: "https://github.com/Sawyerh1229/TheCallBacks",
       },
