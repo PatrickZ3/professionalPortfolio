@@ -116,7 +116,7 @@ export default function Home() {
               aria-label="Email"
             >
               <Image
-                src="/MailIcon.png.png"
+                src="/MailIcon.png"
                 alt="Mail Me Icon"
                 className="icon"
                 width={32}
