@@ -1,7 +1,6 @@
 "use client"
 import Image from "next/image";
 import Project from "./components/project"
-import Footer from "./components/footer";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -32,10 +31,10 @@ export default function Home() {
 
       const swipeDistance = touchStartX - touchEndX;
       if (swipeDistance > 50) {
-        
+
         setIsMenuOpen(true);
       } else if (swipeDistance < -50) {
-        
+
         setIsMenuOpen(false);
       }
     };
@@ -111,10 +110,24 @@ export default function Home() {
               width={32}
               height={32}
             />
+            <a
+              href="mailto:Patzesantoso@gmail.com"
+              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors group"
+              aria-label="Email"
+            >
+              <Image
+                src="/Mail Icon.png"
+                alt="Mail Me Icon"
+                className="icon"
+                width={32}
+                height={32}
+              />
+              <span className="text-sm font-medium hidden sm:inline">Patzesantoso@gmail.com</span>
+            </a>
           </div>
         </div>
       </section>
-      
+
       <section className="projects" id="projects">
         <div className="section__text__p1">My Featured</div>
         <div className="title">Projects</div>
@@ -136,8 +149,6 @@ export default function Home() {
           />
         </button>
       </section>
-
-      <Footer />
 
     </div>
   );
