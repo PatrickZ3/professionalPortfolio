@@ -6,7 +6,7 @@ export const projectsData = [
         name: "Kompak",
         image: "/kompak.png",
         description:
-          "A sleek and intuitive project management tool inspired by **Jira**. Kompak lets users create boards, add and manage tasks with drag-and-drop functionality, and keep track of progress in a clean, dark-themed UI. Built with **Next.js**, **Supabase**, and **Radix UI** for a smooth and responsive experience.",
+          "A sleek and intuitive project-management tool inspired by Jira. Kompak lets users create boards, manage tasks with drag-and-drop functionality, and track progress through a clean, dark-themed interface. Built with Next.js, Supabase, and Radix UI for a fast and modern experience. (Note: The live demo is currently offline because the Supabase instance is inactive.)",
         github: "https://github.com/PatrickZ3/Kompak",
         liveDemo: "https://kompak.vercel.app",
       },
@@ -59,7 +59,7 @@ export const projectsData = [
         name: "Kompak",
         image: "/kompak.png",
         description:
-          "A sleek and intuitive project management tool inspired by Jira. Kompak lets users create boards, add and manage tasks with drag-and-drop functionality, and keep track of progress in a clean, dark-themed UI. Built with Next.js, Supabase, and Radix UI for a smooth and responsive experience.",
+          "A sleek and intuitive project-management tool inspired by Jira. Kompak lets users create boards, manage tasks with drag-and-drop functionality, and track progress through a clean, dark-themed interface. Built with Next.js, Supabase, and Radix UI for a fast and modern experience. (Note: The live demo is currently offline because the Supabase instance is inactive.)",
         github: "https://github.com/PatrickZ3/Kompak",
         liveDemo: "https://kompak.vercel.app",
       },
